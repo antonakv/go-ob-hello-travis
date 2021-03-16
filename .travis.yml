@@ -2,8 +2,7 @@ language: go
 
 go:
     - "1.16"
-    
+
 script:
-    - bash install_go.sh
     - bash build_hello.sh
     - bash test_hello.sh
