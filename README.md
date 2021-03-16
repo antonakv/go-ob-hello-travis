@@ -40,13 +40,12 @@ cd go-ob-hello-travis
 
 - In the same folder you were before run 
 ```bash
-make
+go build hello.go
 ```
 
 Expected output:
 ```bash
-$ make
-go build hello.go
+$ go build hello.go
 ```
 
 ## Run
