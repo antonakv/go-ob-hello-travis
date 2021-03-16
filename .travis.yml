@@ -1,10 +1,5 @@
-language: go
-go:
-- 1.16.x
-
-
-
-
-
-
-
+language: bash
+script:
+    - bash install_go.sh
+    - bash build_hello.sh
+    - bash test_hello.sh
