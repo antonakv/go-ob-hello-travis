@@ -1,16 +1,20 @@
 # golang - travis test that check for hello (travis run green build)
 ## Intro
+This manual is dedicated to run vagrant box with program that prints hello. 
 
-This manual is dedicated to run hello.go script
 Tested on Mac OS X.
 
 ## Requirements
+- Oracle Virtualbox recent version installed
+[VirtualBox installation manual](https://www.virtualbox.org/manual/ch01.html#intro-installing)
 
-- Golang installed 
-[Golang installation manual](https://golang.org/doc/install)
+- Hashicorp vagrant recent version installed
+[Vagrant installation manual](https://learn.hashicorp.com/tutorials/vagrant/getting-started-install)
+
+- git installed
+[Git installation manual](https://git-scm.com/download/mac)
 
 ## Preparation 
-
 - Clone git repository. 
 
 ```bash
@@ -20,13 +24,13 @@ git clone https://github.com/antonakv/go-ob-hello-travis.git
 Expected command output looks like this:
 
 ```bash
-$ git clone https://github.com/antonakv/go-ob-hello-travis.git
 Cloning into 'go-ob-hello-travis'...
-remote: Enumerating objects: 11, done.
-remote: Counting objects: 100% (11/11), done.
-remote: Compressing objects: 100% (9/9), done.
-remote: Total 11 (delta 0), reused 6 (delta 0), pack-reused 0
-Receiving objects: 100% (11/11), done.
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 1), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (1/1), done.
 ```
 
 - Change folder to go-ob-hello-travis
@@ -35,27 +39,15 @@ Receiving objects: 100% (11/11), done.
 cd go-ob-hello-travis
 ```
 
-## Build
+## Provisioning
 
 - In the same folder you were before run 
+
 ```bash
-go build hello.go
+vagrant up
 ```
 
-Expected output:
+Sample result
 ```bash
-$ go build hello.go
-```
 
-## Run
-
-- In the same folder you were before run 
-```bash
-./hello
-```
-
-Expected output:
-```bash
-$ ./hello
-hello
 ```
