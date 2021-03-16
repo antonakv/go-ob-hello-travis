@@ -1,7 +1,8 @@
 # golang - travis test that check for hello (travis run green build)
 ## Intro
 
-This manual is dedicated to run hello.go script
+This manual is dedicated to run hello.go script.
+
 Tested on Mac OS X.
 
 ## Requirements
